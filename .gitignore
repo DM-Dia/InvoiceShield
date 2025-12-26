@@ -1,0 +1,19 @@
+# Python venv
+venv/
+__pycache__/
+
+# VS Code
+.vscode/
+
+# Byte code
+*.pyc
+
+# SQLite DB
+invoices.db
+
+# Streamlit internal
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db

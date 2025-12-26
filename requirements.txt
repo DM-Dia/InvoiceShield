@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+easyocr
+pdf2image
+Pillow
+sqlalchemy
+python-multipart
+streamlit
+reportlab
