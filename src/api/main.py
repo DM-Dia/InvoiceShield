@@ -1,10 +1,10 @@
 from fastapi import FastAPI, UploadFile, File
-from ocr.ocr_extractor import extract_text
-from parser.invoice_parser import parse_invoice
-from rules.rule_engine import rule_flags
-from db.database import SessionLocal, engine
-from db.models import Base
-from db.crud import save_invoice
+from src.ocr.ocr_extractor import extract_text
+from src.parser.invoice_parser import parse_invoice
+from src.rules.rule_engine import rule_flags
+from src.db.database import SessionLocal, engine
+from src.db.models import Base
+from src.db.crud import save_invoice
 
 Base.metadata.create_all(bind=engine)
 
@@ -24,3 +24,11 @@ async def upload_invoice(file: UploadFile = File(...)):
     saved = save_invoice(db, parsed)
 
     return {"invoice_id": saved.id, "details": parsed}
+
+@app.get("/")
+def health_check():
+    return {
+        "status": "ok",
+        "service": "InvoiceShield API",
+        "version": "1.0.0"
+    }
