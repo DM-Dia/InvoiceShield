@@ -7,7 +7,7 @@ It provides a usable dashboard for analytics, fraud scoring, and audit-ready rep
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 * Invoice upload (PDF / PNG / JPG)
 * OCR-based text extraction (EasyOCR)
