@@ -27,4 +27,23 @@ It provides a usable dashboard for analytics, fraud scoring, and audit-ready rep
 * **Fraud score (0–100)** summarizes invoice risk with explainable reasons
 * Results are stored and visualized through a dashboard
 
+## Project Structure
+
+```text
+InvoiceShield/
+├── src/
+│   ├── api/
+│   │   └── main.py
+│   ├── ocr/
+│   ├── parser/
+│   ├── rules/
+│   ├── fraud/
+│   ├── reports/
+│   └── db/
+├── dashboard/
+│   └── app.py
+├── invoices.db
+├── requirements.txt
+└── README.md
+```
 
