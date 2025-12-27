@@ -28,21 +28,3 @@ It provides a usable dashboard for analytics, fraud scoring, and audit-ready rep
 * Results are stored and visualized through a dashboard
 
 
-## 🗂️ Project Structure
-
-InvoiceShield/
-├── src/
-│   ├── api/          # FastAPI backend
-│   ├── ocr/          # OCR logic
-│   ├── parser/       # Invoice parsing
-│   ├── rules/        # Rule-based checks
-│   ├── fraud/        # Fraud scoring & clustering
-│   ├── reports/      # PDF report generation
-│   └── db/           # Database models & CRUD
-│
-├── dashboard/
-│   └── app.py        # Streamlit dashboard
-│
-├── invoices.db
-├── requirements.txt
-└── README.md
